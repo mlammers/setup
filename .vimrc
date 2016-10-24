@@ -44,9 +44,11 @@ set showcmd
 set autoread
 set autoindent
 
-set textwidth=90
-set colorcolumn=+1
 " set mouse=a
+
+" Highlight text when it's longer than 80 chars
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 set guifont=Fira\ Mono:h12
 
@@ -107,6 +109,7 @@ endif
   let g:syntastic_check_on_open = 1
   let g:syntastic_check_on_wq = 1
   let g:syntastic_javascript_checkers = ['eslint']
+  let g:syntastic_javascript_eslint_exec = 'node_modules/eslint/bin/eslint.js'
 
   let g:syntastic_error_symbol = '❌'
   let g:syntastic_style_error_symbol = '⁉️'
