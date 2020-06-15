@@ -5,8 +5,6 @@ export ANDROID_HOME=~/Library/Android/sdk
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export GITHUB_ACCESS_TOKEN="13c32c53711c60c789b193bd7e5b10a253667570"
-export SOURCE_ACCESS_TOKEN="2d7c70afe9d4209d90b470add6e32e65422d1858"
 export PATH="${PATH}:/Applications/sonar-scanner/bin"
 
 export PATH="$PATH:`yarn global bin`"
